@@ -4,5 +4,13 @@
 <dict>
     <key>ITSAppUsesNonExemptEncryption</key>
     <false/>
+    <key>FIREBASE_APP_ID</key>
+    <string>1:877432795019:ios:6ba8e27f3874e45bbf498e</string>
+    <key>FIREBASE_PROJECT_ID</key>
+    <string>flexpeak-b9f30</string>
+    <key>FIREBASE_GCM_SENDER_ID</key>
+    <string>877432795019</string>
+    <key>FIREBASE_API_KEY</key>
+    <string>AIzaSyDUp037ihYXM-mDDWnSNiGv1CHOFLYxMzc</string>
 </dict>
 </plist>

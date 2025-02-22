@@ -15,11 +15,15 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://source.skip.tools/skip.git", from: "1.2.31"),
-        .package(url: "https://source.skip.tools/skip-ui.git", from: "1.0.0")
+        .package(url: "https://source.skip.tools/skip-ui.git", from: "1.0.0"),
+        .package(url: "https://source.skip.tools/skip-foundation.git", from: "1.0.0"),
+        .package(url: "https://source.skip.tools/skip-firebase.git", "0.0.0"..<"2.0.0")
     ],
     targets: [
         .target(name: "FlexPeak", dependencies: [
-            .product(name: "SkipUI", package: "skip-ui")
+            .product(name: "SkipUI", package: "skip-ui"),
+            .product(name: "SkipFirebaseAuth", package: "skip-firebase"),
+            .product(name: "SkipFirebaseFirestore", package: "skip-firebase")
         ], resources: [.process("Resources")], plugins: [.plugin(name: "skipstone", package: "skip")]),
         .testTarget(name: "FlexPeakTests", dependencies: [
             "FlexPeak",

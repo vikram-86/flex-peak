@@ -12,6 +12,8 @@
 		496BDBEE2B8A7E9C00C09264 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 496BDBED2B8A7E9C00C09264 /* Localizable.xcstrings */; };
 		499CD43B2AC5B799001AE8D8 /* FlexPeakAppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F90C2B2A52156200F06D93 /* FlexPeakAppMain.swift */; };
 		499CD4402AC5B799001AE8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F90C2F2A52156300F06D93 /* Assets.xcassets */; };
+		AC5D03822D6A25440057DF56 /* SkipFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = AC5D03812D6A25440057DF56 /* SkipFoundation */; };
+		AC5D03852D6A28ED0057DF56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC5D03842D6A28ED0057DF56 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +42,7 @@
 		49F90C2B2A52156200F06D93 /* FlexPeakAppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlexPeakAppMain.swift; path = Sources/FlexPeakAppMain.swift; sourceTree = SOURCE_ROOT; };
 		49F90C2F2A52156300F06D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49F90C312A52156300F06D93 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Entitlements.plist; sourceTree = "<group>"; };
+		AC5D03842D6A28ED0057DF56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5D03822D6A25440057DF56 /* SkipFoundation in Frameworks */,
 				49231BAC2AC5BCEF00F98ADF /* FlexPeakApp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +95,7 @@
 				49F90C2F2A52156300F06D93 /* Assets.xcassets */,
 				49F90C312A52156300F06D93 /* Entitlements.plist */,
 				4900101C2BACEA710000DE33 /* Info.plist */,
+				AC5D03842D6A28ED0057DF56 /* GoogleService-Info.plist */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 			name = FlexPeak;
 			packageProductDependencies = (
 				49231BAB2AC5BCEF00F98ADF /* FlexPeakApp */,
+				AC5D03812D6A25440057DF56 /* SkipFoundation */,
 			);
 			productName = App;
 			productReference = 496BDBEB2B89A47800C09264 /* FlexPeak.app */;
@@ -143,6 +149,8 @@
 			);
 			mainGroup = 49F90C1F2A52156200F06D93;
 			packageReferences = (
+				AC5D03802D6A25440057DF56 /* XCRemoteSwiftPackageReference "skip-foundation" */,
+				AC5D03832D6A25740057DF56 /* XCRemoteSwiftPackageReference "skip-firebase" */,
 			);
 			productRefGroup = 496BDBEC2B89A47800C09264 /* Products */;
 			projectDirPath = "";
@@ -160,6 +168,7 @@
 			files = (
 				499CD4402AC5B799001AE8D8 /* Assets.xcassets in Resources */,
 				496BDBEE2B8A7E9C00C09264 /* Localizable.xcstrings in Resources */,
+				AC5D03852D6A28ED0057DF56 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,10 +293,34 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		AC5D03802D6A25440057DF56 /* XCRemoteSwiftPackageReference "skip-foundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://source.skip.tools/skip-foundation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.17;
+			};
+		};
+		AC5D03832D6A25740057DF56 /* XCRemoteSwiftPackageReference "skip-firebase" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://source.skip.tools/skip-firebase.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		49231BAB2AC5BCEF00F98ADF /* FlexPeakApp */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FlexPeakApp;
+		};
+		AC5D03812D6A25440057DF56 /* SkipFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5D03802D6A25440057DF56 /* XCRemoteSwiftPackageReference "skip-foundation" */;
+			productName = SkipFoundation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

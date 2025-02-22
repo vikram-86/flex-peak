@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "877432795019",
+    "project_id": "flexpeak-b9f30",
+    "storage_bucket": "flexpeak-b9f30.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877432795019:android:14a04ca086cdf32abf498e",
+        "android_client_info": {
+          "package_name": "com.vikram.flexpeak"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0uQQCF4AkVt0d1XBSxfmgcBg5DbYYcCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -88,9 +88,6 @@
         }
       }
     },
-    "Hello World" : {
-
-    },
     "Home" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -236,6 +233,12 @@
         }
       }
     },
+    "Sign In Anonymously" : {
+
+    },
+    "Sign Out" : {
+
+    },
     "System" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -293,6 +296,9 @@
           }
         }
       }
+    },
+    "Welcome!" : {
+
     }
   },
   "version" : "1.0"
